@@ -1,0 +1,56 @@
+
+version: "1.0"
+# Stages can help you organize your steps in stages
+stages:
+  - "clone"
+  - "generate_version"
+  - "test"
+
+steps:
+  clone:
+    title: "Cloning repository"
+    type: "git-clone"
+    repo: "shubhamprataps/hello"
+    # Clone the master branch. Or, use ${{CF_BRANCH}} to get branch name from trigger
+    # Learn more at https://codefresh.io/docs/docs/codefresh-yaml/variables/
+    #revision: "${{CF_BRANCH}}"
+    git: "DeloitteHux_github"
+    stage: "clone"
+
+  #build:
+   #title: "Building Docker image"
+    #type: "build"
+    #image_name: "codefresh-io/fresh"
+    #working_directory: "${{clone}}"
+    # Set 'latest' tag on the image. Or, use built-in variables
+    # like ${{CF_BRANCH_TAG_NORMALIZED}} to use the current branch name/tag.
+    #tag: "latest"
+    #dockerfile: "Dockerfile"
+    #stage: "build"
+    
+  GetGitToken:
+    title: Reading Github token
+    stage: generate_version
+    image: 'node'
+    commands:
+    - cf_export GITHUB_TOKEN="${{HELLOSECRETGIT}}"
+  
+  generate_version:
+    title: "Generating semantic release number"
+    type: "freestyle"
+    stage: "generate_version"
+    image: 'node'
+    working_directory: "${{clone}}"
+    commands:
+      - npm install @semantic-release/git @semantic-release/changelog -D
+      - npx semantic-release 
+
+  test:
+    title: "Running test"
+    type: "freestyle" # Run any command
+    image: "ubuntu:latest" # The image in which command will be executed
+    working_directory: "${{clone}}" # Running command where code cloned
+    commands:
+      - "ls"
+    stage: "test"
+
