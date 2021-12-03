@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/shubhamprataps/semver/compare/v1.2.0...v1.2.1) (2021-12-03)
+
+
+### Bug Fixes
+
+* **ksdv:** nkdsj ([ef351bd](https://github.com/shubhamprataps/semver/commit/ef351bd07e955e90eb3459649f6844273740635f))
+
 # [1.2.0](https://github.com/shubhamprataps/semver/compare/v1.1.1...v1.2.0) (2021-12-03)
 
 
