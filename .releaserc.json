@@ -4,6 +4,7 @@
     { "name": "demo",  "prerelease" : "version-bet" }
 
 
+
   ],
 
   "plugins": [
