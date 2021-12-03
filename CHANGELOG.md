@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/shubhamprataps/semver/compare/v1.1.0...v1.1.1) (2021-12-03)
+
+
+### Bug Fixes
+
+* **bvjsd:** ds ([9665614](https://github.com/shubhamprataps/semver/commit/96656141ce34e1a9c9b46018eefc1194aa433987))
+
 # [1.1.0](https://github.com/shubhamprataps/semver/compare/v1.0.1...v1.1.0) (2021-12-03)
 
 
