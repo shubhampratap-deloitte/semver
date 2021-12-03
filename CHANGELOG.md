@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/shubhamprataps/semver/compare/v1.1.1...v1.2.0) (2021-12-03)
+
+
+### Bug Fixes
+
+* **sjnf:** nfjns ([9b3cbcb](https://github.com/shubhamprataps/semver/commit/9b3cbcb97e8ca4c60f954a0e9479ca755b3f7554))
+
+
+### Features
+
+* **alpha:** alpha11 added ([57de812](https://github.com/shubhamprataps/semver/commit/57de8121030c220a280c126b2b663d5f8d252007))
+
 ## [1.1.1](https://github.com/shubhamprataps/semver/compare/v1.1.0...v1.1.1) (2021-12-03)
 
 
