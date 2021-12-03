@@ -1,7 +1,7 @@
 {
   "branches": [
     "master", 
-    { "name": "demo",  "prerelease" : "version-bet" }
+    { "name": "master",  "prerelease" : "version-bet" }
 
 
 
