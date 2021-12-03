@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/shubhamprataps/semver/compare/v1.0.0...v1.0.1) (2021-12-03)
+
+
+### Bug Fixes
+
+* **ddd:** d ([21a2015](https://github.com/shubhamprataps/semver/commit/21a2015aa5c645525ee111d23cd728168e9bb567))
+
 # 1.0.0 (2021-12-02)
 
 
