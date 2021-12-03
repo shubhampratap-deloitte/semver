@@ -1,9 +1,7 @@
 {
   "branches": [
     "master", 
-    { "name": "test",  "prerelease" : "version-bet" }
-
-
+    { "name": "test",  "prerelease" : "version11.1-bet" }
   ],
 
   "plugins": [
