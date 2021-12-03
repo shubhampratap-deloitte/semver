@@ -1,7 +1,15 @@
 {
   "branches": [
     "master", 
+<<<<<<< HEAD
     { "name": "test",  "prerelease" : "version1-bet" }
+=======
+
+    { "name": "demo",  "prerelease" : "alpha11" }
+
+
+
+>>>>>>> b2b2f4d7bae6969137d57668042fa082b23686f3
   ],
 
   "plugins": [
